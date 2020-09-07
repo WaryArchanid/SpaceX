@@ -1,0 +1,69 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SpaceXProgram</title>
+    <link rel="stylesheet" href="assets/css/style.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+</head>
+<body>
+    <div class="container-fluid">
+       <h4>Space X Launch Programs</h4>
+       <div class="row">
+           <div class="col-lg-2 col-md-2 col-sm-4">
+               <div class="space-filter-siderbar">
+                   <div class="space-filter-year-sidebar">
+                       <h6>Filters</h6>
+                       <div class="space-section-year">
+                           <div class="space-filter-launch">Launch Year</div>
+                           <div class="space-launch-years" id="year_filter">
+                               <span data-year="2006" class="badge">2006</span>
+                               <span data-year="2007" class="badge">2007</span>
+                               <span data-year="2008" class="badge">2008</span>
+                               <span data-year="2009" class="badge">2009</span>
+                               <span data-year="2010" class="badge">2010</span>
+                               <span data-year="2011" class="badge">2011</span>
+                               <span data-year="2012" class="badge">2012</span>
+                               <span data-year="2013" class="badge">2013</span>
+                               <span data-year="2014" class="badge">2014</span>
+                               <span data-year="2015" class="badge">2015</span>
+                               <span data-year="2016" class="badge">2016</span>
+                               <span data-year="2017" class="badge">2017</span>
+                               <span data-year="2018" class="badge">2018</span>
+                               <span data-year="2019" class="badge">2019</span>
+                               <span data-year="2020" class="badge">2020</span>
+                           </div>
+                       </div>
+                       <div class="space-section-launching">
+                           <div class="space-filter-launch">Successful Launch</div>
+                           <div class="space-launch-years" id="launch_filter">
+                               <span data-launch="true" class="badge">True</span>
+                               <span data-launch="false" class="badge">False</span>
+                           </div>
+                       </div>
+                       <div class="space-section-landing">
+                           <div class="space-filter-launch">Successful Landing</div>
+                           <div class="space-launch-years" id="land_filter">
+                               <span data-land="true" class="badge">True</span>
+                               <span data-land="false" class="badge">False</span>
+                           </div>
+                       </div>
+                   </div>
+               </div>
+           </div>
+
+           <div class="col-lg-10 col-md-10 col-sm-8">
+               <div class="space-programs">
+                <div class="spinner-border" id="spinner"></div>
+                   <div class="space--field__items d-flex flex-row flex-fill flex-wrap" id="program"></div>
+               </div>
+           </div>
+       </div>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="assets/js/spaceX.js"></script>
+</body>
+</html>
